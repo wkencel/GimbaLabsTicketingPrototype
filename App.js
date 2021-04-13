@@ -3,7 +3,7 @@ import { Button, View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-// import  { RegisterScreen }  from './src/views/Register.js';
+// import { RegisterScreen } from './src/views/Register.js';
 // import { BioScreen } from './src/views/AddBio.js.js';
 // import { IdeasScreen } from './src/views/AddIdea.js';
 
@@ -33,7 +33,7 @@ function RegisterScreen({ navigation }) {
       <Text>About Registering Id</Text>
       <Button
       title="Create Id"
-      // onPress={() => navigation.navigate('Home')} // currently points back to homescreen
+      // onPress={() => navigation.navigate('Register Id')} // currently points back to window
     />
     <Button
         title="Go back to home"
@@ -47,9 +47,21 @@ function BioScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Bio Screen</Text>
+      <Text>
+      
+        form that takes LINKED REF to AUTH
+        
+        form fields 
+          alias:
+          aboutURL: optional,
+          imageURL: optional,
+          time-block-length (min),
+          time-block-cost (ADA)
+      
+      </Text>
       <Button
         title="Bio"
-        // onPress={() => navigation.navigate('Home')} // currently points back to homescreen
+        // onPress={() => navigation.navigate('Add Bio')} // currently points back to window
       />
       <Button
         title="Go back to home"
@@ -64,6 +76,7 @@ function IdeasScreen({ navigation }) {
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Button
       title="Add idea"
+      // onPress={() => navigation.navigate('Add Ideas')} // currently points back to window
       />
       <Text>if add an idea, show field for next idea, and so on</Text>
       <Text>populates an array of ideas for users</Text>
